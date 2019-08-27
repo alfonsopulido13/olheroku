@@ -163,4 +163,7 @@ ul.icons li:last-child {
   padding-bottom: 8px;
   padding-left: 16px;
   margin-right: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:black;
 }
