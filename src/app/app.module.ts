@@ -31,6 +31,7 @@ import { StorageServiceModule} from 'angular-webstorage-service';
 import { AlertsService } from 'angular-alert-module';
 import { RegistroService } from './servicios/registro.service';
 import { PerfilService } from './servicios/perfil.service';
+import { PrivacidadComponent } from './privacidad/privacidad.component';
 
 
 const config = {
@@ -57,7 +58,7 @@ const appRoutes: Routes = [
   {path: 'platcursos' , component : PlatcursosComponent},
   {path: 'conferencia' , component: VideoconferenciaComponent},
   {path: 'detallepago' , component: DetallepagoComponent},
-  
+  {path: 'privacidad' , component: PrivacidadComponent}
 ];
 
 
@@ -79,6 +80,7 @@ const appRoutes: Routes = [
     FilterPipe,
     FiltertPipe,
     PlattutoriaComponent,
+    PrivacidadComponent,
    
     
 
