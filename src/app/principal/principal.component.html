@@ -10,10 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link href="/path/to/bootstrap.min.css" rel="stylesheet">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="/path/to/buttons.css" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -23,7 +23,11 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="platprincipal">Logo </a>
+        <a class="navbar-brand" href="platprincipal">
+          <font color="black"><b>PLATAFORM</b></font>
+          <font color="red" size="6"><b>A</b></font>
+          <font color="black"><b>PRENDIZAJE</b></font>
+        </a>
         <a class="navbar-brand">
 
         </a>
@@ -40,7 +44,8 @@
             <input type="text" class="form-control-buscar" name="filterPost" placeholder="Buscar"
               [(ngModel)]="filterPostt" required />
           </li>
-          <li><button type="button" class="btn btn-primary btn-sm btn-radius" routerLink="/login">Iniciar sesión</button></li>
+          <li><button type="button" class="btn btn-primary btn-sm btn-radius" routerLink="/login">Iniciar
+              sesión</button></li>
 
 
 
@@ -48,51 +53,62 @@
       </div>
     </div>
   </nav>
-  
+
 </body>
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
   <div class="container">
     <div class="row row-30">
       <div class="col-md-4 col-xl-5">
-        <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-          <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
-          <!-- Rights-->
-          <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+        <div class="pr-xl-4">
+          <br>
+          <br>
+          <p>
+            <font color="white"><b>PLATAFORM</b></font>
+            <font color="red" size="6"><b>A</b></font>
+            <font color="white"><b>PRENDIZAJE</b></font>
+          </p>
         </div>
       </div>
       <div class="col-md-4">
-        <h5>Contacts</h5>
-        <dl class="contact-list">
-          <dt>Address:</dt>
-          <dd>798 South Park Avenue, Jaipur, Raj</dd>
-        </dl>
-        <dl class="contact-list">
-          <dt>email:</dt>
-          <dd><a href="mailto:#">openlearning@gmail.com</a></dd>
-        </dl>
-        <dl class="contact-list">
-          <dt>Teléfono:</dt>
-          <dd><a href="tel:#">+593 987987987</a> 
-          </dd>
-        </dl>
+        <ul class="nav-list">
+          <li><a href="conocenos"><b>Conócenos</b></a></li>
+          <li><a href="politicas"><b>Políticas</b></a></li>
+          <li><a href="#"><b>Privacidad</b></a></li>
+          <li><a href="#"><b>Solicitud de curso único</b></a></li>
+          <li><a href="#"><b>T & CS</b></a></li>
+        </ul>
       </div>
       <div class="col-md-4 col-xl-3">
-        <ul class="nav-list">
-          <li><a href="conocenos">Conócenos</a></li>
-          <li><a href="politicas">Políticas</a></li>
-          <li><a href="#">Privacidad</a></li>
-          <li><a href="#">Solicitud de curso único</a></li>
-          <li><a href="#">T & CS</a></li>
+          <br>
+          <font color="#c9e265"size="4"><b>RECIBE NUESTRAS NOTICIAS</b></font>
+          <input type="text" class="correosubscrito" id="correosubscrito" placeholder="Correo electrónico">
+          <button type="button" class="btn btn-danger">SUBSCRIBIRSE</button>
+        <ul class="icons">
+          <li>
+            <a href="#" class="fa fa-facebook"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-twitter"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-instagram"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-youtube"></a>
+          </li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="row no-gutters social-container">
+  <!-- <div class="row no-gutters social-container">
     <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
     <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
     <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
     <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
-  </div>
+  </div> -->
 </footer>
 
 </html>
