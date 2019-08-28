@@ -1,138 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <!-- Theme Made By www.w3schools.com -->
-  <title>Proyecto tutorias en línea</title>
+  <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Montserrat"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato"
-    rel="stylesheet"
-    type="text/css"
-  />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
-    #drawer
-    class="sidenav"
-    fixedInViewport="true"
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="!(isHandset$ | async)"
-  >
-    <a href="principal"><mat-toolbar>LOGO</mat-toolbar></a>
-    <mat-nav-list>
-      <a mat-list-item href="login">Log-In</a>
-      <a mat-list-item href="tutorias">Tutorias</a>
-      <a mat-list-item href="cursos">Cursos</a>
-      <a mat-list-item href="conocenos">Conócenos</a>
-      <a mat-list-item href="politicas">Politicas </a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <body>
-      <div class="jumbotron text-center">
-        <h1>Online Tutoring</h1>
-        <p>Los únicos en el Ecuador</p>
-        <form></form>
+<body id="Paginaprincipal" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="principal">
+          <font color="black"><b>PLATAFORM</b></font>
+          <font color="red" size="6"><b>A</b></font>
+          <font color="black"><b>PRENDIZAJE</b></font>
+        </a>
+        <a class="navbar-brand">
+
+        </a>
       </div>
 
-      <div id="contact" class="container-fluid bg-grey">
-        <h3>NUESTRA POLÍTICA DE CALIDAD</h3>
-        <p>
-          La Institución Educativa Open-learning, brinda formación integral
-          científico y humanista, a estudiantes mediante el desarrollo de sus
-          competencias, a través de propuestas pedagógicas actuales, propiciando
-          una convivencia armónica y democrática en la diversidad cultural y
-          social, se compromete a:
-        </p>
-        <p>
-          * Brindar una propuesta educativa de calidad que satisfaga las
-          necesidades de nuestros estudiantes y padres de familia que cumpla con
-          las normas legales e institucionales, aplicables a los servicios que
-          ofrecemos.
-        </p>
-        <p>
-          * Mejorar continuamente los procesos integrales del servicio
-          educativo.
-        </p>
-        <p>
-          * Capacitar permanentemente a nuestros colaboradores en los procesos,
-          actividades o servicios.
-        </p>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
 
-        <h3>NUESTROS OBJETIVOS DE CALIDAD</h3>
-        <p>
-          Open-Learning, establece los objetivos de calidad para asegurar el
-          cumplimiento de los compromisos asumidos. Los Objetivos son:
-        </p>
-        <p>
-          * El usuario registrado solo podrá registrarse en tutorías con tutores
-          disponibles.
-        </p>
-        <p>
-          * El usuario podrá ver el contenido de cursos que ya hubiese
-          culminado.
-        </p>
-        <p>* Todas las semanas se agregan nuevas tutorias.</p>
-        <p>
-          * Proponer e implementar Planes de Mejora y Planes de Innovación que
-          permitan el logro de aprendizajes de calidad.
-        </p>
-        <p>* Revisión y mejora de los documentos de planificación y gestión.</p>
-        <p>
-          * Impulsar estrategias metodológicas y actividades que promuevan
-          aprendizajes de calidad dentro del modelo pedagógico institucional.
-        </p>
-        <p>
-          * Evaluar y realizar auditorías internas relacionadas con la calidad
-          de cada gestión.
-        </p>
-        <p>* Conservar el buen clima laboral en la institución.</p>
+          <li><a href="tutorias"><b>Tutorias</b></a></li>
+          <li><a href="cursos"><b>Cursos</b></a></li>
+          <li><a href="conocenos"><b>Conócenos</b></a></li>
+          <!-- <li><a href="politicas">Políticas</a></li> -->
+          <li>
+            <input type="text" class="form-control-buscar" name="filterPost" placeholder="Buscar"
+              [(ngModel)]="filterPostt" required />
+          </li>
+          <li><button type="button" class="btn btn-primary btn-sm btn-radius" routerLink="/login">Iniciar
+              sesión</button></li>
+
+
+
+        </ul>
       </div>
+    </div>
+  </nav>
+<div class="politicasplat">
+    <font color="white" size="7"><b>POLÍTICAS DE SERVICIO</b></font>
+</div>
+<div id="contact" class="container-fluid bg-grey">
+  <h3>NUESTRA POLÍTICA DE CALIDAD</h3>
+  <p>
+    La Institución Educativa Open-learning, brinda formación integral
+    científico y humanista, a estudiantes mediante el desarrollo de sus
+    competencias, a través de propuestas pedagógicas actuales, propiciando
+    una convivencia armónica y democrática en la diversidad cultural y
+    social, se compromete a:
+  </p>
+  <p>
+    * Brindar una propuesta educativa de calidad que satisfaga las
+    necesidades de nuestros estudiantes y padres de familia que cumpla con
+    las normas legales e institucionales, aplicables a los servicios que
+    ofrecemos.
+  </p>
+  <p>
+    * Mejorar continuamente los procesos integrales del servicio
+    educativo.
+  </p>
+  <p>
+    * Capacitar permanentemente a nuestros colaboradores en los procesos,
+    actividades o servicios.
+  </p>
 
-      <footer id="footer">
-        <div class="inner">
-          <p class="id_small">
-            © El contenido de esta obra es de propiedad intelectual de "Proyecto
-            de Aprendizaje". Todos los derechos reservados.Prohibida su
-            reproducción total,parcial, comunicación pública o distribución sin
-            autorización previa del titular de los derechos
+  <h3>NUESTROS OBJETIVOS DE CALIDAD</h3>
+  <p>
+    Open-Learning, establece los objetivos de calidad para asegurar el
+    cumplimiento de los compromisos asumidos. Los Objetivos son:
+  </p>
+  <p>
+    * El usuario registrado solo podrá registrarse en tutorías con tutores
+    disponibles.
+  </p>
+  <p>
+    * El usuario podrá ver el contenido de cursos que ya hubiese
+    culminado.
+  </p>
+  <p>* Todas las semanas se agregan nuevas tutorias.</p>
+  <p>
+    * Proponer e implementar Planes de Mejora y Planes de Innovación que
+    permitan el logro de aprendizajes de calidad.
+  </p>
+  <p>* Revisión y mejora de los documentos de planificación y gestión.</p>
+  <p>
+    * Impulsar estrategias metodológicas y actividades que promuevan
+    aprendizajes de calidad dentro del modelo pedagógico institucional.
+  </p>
+  <p>
+    * Evaluar y realizar auditorías internas relacionadas con la calidad
+    de cada gestión.
+  </p>
+  <p>* Conservar el buen clima laboral en la institución.</p>
+</div>
+
+</body>
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+  <div class="container">
+    <div class="row row-30">
+      <div class="col-md-4 col-xl-5">
+        <div class="pr-xl-4">
+          <br>
+          <br>
+          <p>
+            <font color="white"><b>PLATAFORM</b></font>
+            <font color="red" size="6"><b>A</b></font>
+            <font color="white"><b>PRENDIZAJE</b></font>
           </p>
-          <ul class="icons">
-            <li>
-              <a href="#" class="icon fa-twitter"
-                ><span class="label">Twitter</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon fa-facebook"
-                ><span class="label">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon fa-instagram"
-                ><span class="label">Instagram</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="icon fa-envelope"
-                ><span class="label">Email</span></a
-              >
-            </li>
-          </ul>
         </div>
-      </footer>
-    </body>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+      </div>
+      <div class="col-md-4">
+        <ul class="nav-list">
+          <li><a href="conocenos"><b>Conócenos</b></a></li>
+          <li><a href="politicas"><b>Políticas</b></a></li>
+          <li><a href="privacidad"><b>Privacidad</b></a></li>
+          <li><a href="#"><b>Solicitud de curso único</b></a></li>
+          <li><a href="#"><b>T & CS</b></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-xl-3">
+          <br>
+          <font color="#c9e265"size="4"><b>RECIBE NUESTRAS NOTICIAS</b></font>
+          <input type="text" class="correosubscrito" id="correosubscrito" placeholder="Correo electrónico">
+          <button type="button" class="btn btn-danger">SUBSCRIBIRSE</button>
+        <ul class="icons">
+          <li>
+            <a href="#" class="fa fa-facebook"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-twitter"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-instagram"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-youtube"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row no-gutters social-container">
+    <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+    <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+    <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+    <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+  </div> -->
+</footer>
+
+</html>
