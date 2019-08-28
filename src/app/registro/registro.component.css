@@ -1,31 +1,191 @@
-body {
-  margin-top: 20px;
+
+.navbar {
+  background-color:#ffff;
+  z-index: 9999;
+  border: 0;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montsrrat, sans-serif;
 }
-.panel-title {
-  display: inline;
-  font-weight: bold;
+.navbar li a, .navbar .navbar-brand {
+  color:#38b6ff ;
 }
-.checkbox.pull-right {
+
+.pr-xl-4{
+  color:#ffff ;
+  font-size: 20px;
+}
+
+/* body {
+    background-image: url(src\images\fondo_inicio-26.PNG);
+    background-size: cover;
+  } */
+
+
+.btn-primary{
+  border-radius:5%;
+  margin-top: 10%; 
+  padding: 5px 20px 5px 20px;
+  background-color: #38b6ff;
+
+}
+
+.form-control-buscar{
+  margin-right: 8px;
+  border-radius: 2%;
+  margin-top: 8%; 
+  border-block-style: #2e2b2b;
+  
+}
+
+.context-dark, .bg-gray-dark, .bg-primary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+  color: #38b6ff;
+}
+.nav-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+  margin-left: 0;
+  opacity: 1;
+
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
-.pl-ziro {
-  padding-left: 0px;
+
+.social-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 23px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+  content: "\f14f";
+  font: 400 21px/1 "Material Design Icons";
+  color: #4d6de6;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -28px;
+  margin-right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .22s ease;
 }
 
-.logeo {
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  margin-top:8px;
+  
+}
+
+ul.icons li {
+  display: inline-block;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+ul.icons li a {
+  display: block;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0.5em;
+  border: solid 1px rgba(144, 144, 144, 0.25);
+  color: rgba(144, 144, 144, 0.25);
+  
+}
+
+ul.icons li a:before {
+  font-size: 1.5em;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  
+}
+
+ul.icons li a:hover {
+  background-color: #202024;
+  color: #fff;
+  
+}
+
+ul.icons li:last-child {
+  padding-right: 0;
+  
+}
+.fa-facebook {
+
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+ .fa-snapchat-ghost{
+  color: white;
+ }
+
+ .fa-instagram{
+  color: white;
+ }
+
+ .fa-youtube{
+  color: white;
+ }
+
+.h3{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.correosubscrito{
+  padding-top: 8px;
   padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 5%;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 750px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  margin-right: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:black;
+  color: black;
+}
 
-  max-width: 100%;
-  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(18).jpg");
-
-  height: 100%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.panel{
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.politicasplat{
+    margin-top: 60px;
+    padding-top: 90px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    margin-right: 5px;
+    background-color:#38b6ff;
+    text-align: center;
 }

@@ -1,65 +1,154 @@
-<link
-  href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
-  rel="stylesheet"
-  id="bootstrap-css"
-/>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="principal">Logo</a>
+<head>
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body id="Paginaprincipal" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="principal">
+          <font color="black"><b>PLATAFORM</b></font>
+          <font color="red" size="6"><b>A</b></font>
+          <font color="black"><b>PRENDIZAJE</b></font>
+        </a>
+        <a class="navbar-brand">
+
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="tutorias"><b>Tutorias</b></a></li>
+          <li><a href="cursos"><b>Cursos</b></a></li>
+          <li><a href="conocenos"><b>Conócenos</b></a></li>
+          <!-- <li><a href="politicas">Políticas</a></li> -->
+          <li>
+            <input type="text" class="form-control-buscar" name="filterPost" placeholder="Buscar"
+              [(ngModel)]="filterPostt" required />
+          </li>
+          <li><button type="button" class="btn btn-primary btn-sm btn-radius" routerLink="/login">Iniciar
+              sesión</button></li>
+
+
+
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <div class="container">
+
+
+
+    <div class="logeo">
+   
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                          <font color="black"><b>PLATAFORM</b></font>
+          <font color="red" size="6"><b>A</b></font>
+          <font color="black"><b>PRENDIZAJE</b></font>
+              </h3>
+            </div>
+            <div class="panel-body">
+              <form accept-charset="UTF-8" role="form">
+                <fieldset>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="Correo electronico" type="text" required
+                      [(ngModel)]="user.username" name="username" />
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="Contraseña" name="password" type="password" value=""
+                      required [(ngModel)]="user.password" name="password" />
+                  </div>
+                  <div class="checkbox">
+                  </div>
+                  <input class="btn btn-lg btn-info btn-block" type="submit" value="Iniciar sesión"
+                    (click)="iniciarSesion($event, item)" />
+
+
+                </fieldset>
+              </form>
+            </div>
+          </div>
+
+
+   
+    
+    </div>
+
+
+
   </div>
-</nav>
 
-<div class="logeo">
-  <div class="row">
-    <div class="col-md-4 col-md-offset-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">OPEN LEARNING</h3>
+</body>
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+  <div class="container">
+    <div class="row row-30">
+      <div class="col-md-4 col-xl-5">
+        <div class="pr-xl-4">
+          <br>
+          <br>
+          <p>
+            <font color="white"><b>PLATAFORM</b></font>
+            <font color="red" size="6"><b>A</b></font>
+            <font color="white"><b>PRENDIZAJE</b></font>
+          </p>
         </div>
-        <div class="panel-body">
-          <form accept-charset="UTF-8" role="form">
-            <fieldset>
-              <div class="form-group">
-                <input
-                  class="form-control"
-                  placeholder="Correo electronico"
-                  type="text"
-                  required
-                  [(ngModel)]="user.username"
-                  name="username"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  class="form-control"
-                  placeholder="Contraseña"
-                  name="password"
-                  type="password"
-                  value=""
-                  required
-                  [(ngModel)]="user.password"
-                  name="password"
-                />
-              </div>
-              <div class="checkbox">
-              </div>
-              <input
-                class="btn btn-lg btn-success btn-block"
-                type="submit"
-                value="Iniciar sesión"
-                (click)="iniciarSesion($event, item)"
-              />
-
-
-            </fieldset>
-          </form>
-        </div>
+      </div>
+      <div class="col-md-4">
+        <ul class="nav-list">
+          <li><a href="conocenos"><b>Conócenos</b></a></li>
+          <li><a href="politicas"><b>Políticas</b></a></li>
+          <li><a href="privacidad"><b>Privacidad</b></a></li>
+          <li><a href="#"><b>Solicitud de curso único</b></a></li>
+          <li><a href="#"><b>T & CS</b></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-xl-3">
+        <br>
+        <font color="#c9e265" size="4"><b>RECIBE NUESTRAS NOTICIAS</b></font>
+        <input type="text" class="correosubscrito" id="correosubscrito" placeholder="Correo electrónico">
+        <button type="button" class="btn btn-danger">SUBSCRIBIRSE</button>
+        <ul class="icons">
+          <li>
+            <a href="#" class="fa fa-facebook"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-twitter"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-instagram"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-youtube"></a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-</div>
+</footer>
+
+</html>

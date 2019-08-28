@@ -168,3 +168,16 @@ ul.icons li:last-child {
   border-color:black;
   color: black;
 }
+#prueba{
+  margin-top: 15%;
+  margin-left: 60%;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  border-style: hidden;
+  border-radius: 5%;
+  border-width: 1px;
+  background-color: #fff;
+  width: 450px;
+}
